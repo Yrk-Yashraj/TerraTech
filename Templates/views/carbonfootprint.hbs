@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="../../footprint.css">
+</head>
+
+<body>
+  <div id="abc">
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/home/environment">Environment Monitoring</a></li>
+        <li><a href="/home/carbonfootprint">Carbon Footprint Tracker</a></li>
+        <li><a href="/home/climateprediction">Climate Prediction</a></li>
+        <li><a href="/eventpage">Event</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="logo"><img src="/content\logo.png" alt="logo" id="headlogo" title="EcoForeCast"></a></div>
+
+
+  <form>
+    <div class="heading">
+      <h1>Carbon Footprint Calculator</h1>
+    </div>
+
+    <div class="flex">
+      <div class="energy-usage">
+        <div class="info-1">
+          <h1>Energy Usage</h1>
+          <div class="info-11">
+            <label for="electricity-usage">Electricity Usage (kWh/year):</label>
+            <input type="number" id="electricity-usage">
+            <br>
+            <label for="natural-gas-usage">Natural Gas Usage (therms/year):</label>
+            <input type="number" id="natural-gas-usage">
+            <br>
+            <label for="propane-usage">Propane Usage (gallons/year):</label>
+            <input type="number" id="propane-usage">
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="transporatation">
+        <div class="info-2">
+          <h1>Transportation</h1>
+          <div class="info-12">
+            <label for="miles-driven">Miles Driven (miles/year):</label>
+            <input type="number" id="miles-driven">
+            <br>
+            <label for="miles-per-gallon">Vehicle Miles Per Gallon (MPG):</label>
+            <input type="number" id="miles-per-gallon">
+            <br>
+            <label for="air-travel">Air Travel (miles/year):</label>
+            <input type="number" id="air-travel">
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="waste-disposal">
+        <div class="info-3">
+          <h1>Waste Disposal</h1>
+          <div class="info-13">
+            <label for="waste-generated">Waste Generated (pounds/year):</label>
+            <input type="number" id="waste-generated">
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="food-consumption">
+        <div class="info-4">
+          <h1>Food Consumption</h1>
+          <div class="info-14">
+            <label for="meat-consumption">Meat Consumption (pounds/year):</label>
+            <input type="number" id="meat-consumption">
+            <br>
+            <label for="dairy-consumption">Dairy Consumption (gallons/year):</label>
+            <input type="number" id="dairy-consumption">
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="button" role="button" type="button" onclick="calculateAndDisplay()">Calculate</button>
+  </form>
+  <div class="result">
+    <p id="result"></p>
+  </div>
+  {{!-- section-1 --}}
+  <section>
+    <div class="section-1">
+      <div class="content1">
+        <div class="info">
+           <h1> In Your Home</h1>
+          <h2>Heat, Lights and Appliances</h2>
+          <p>In the average American home, 25 percent of energy is used to heat spaces, 13 percent is used to heat
+            water, 11 percent is used for cooling and the remainder is spent on appliances, according to estimates from
+            the Natural Resources Defense Council. Making even small changes to these can make a big difference, said
+            Noah Horowitz, a senior scientist and director of the N.R.D.C.’s Center for Energy Efficiency. “There’s a
+            lot you can do without having to pick up a hammer or write a check,”</p>
+        </div>
+        <div class="ul">
+           <h2>Some ways to reduce Carbon footprint: </h2>
+          <ul>
+            <li>Turn down your water heater</li>
+            <li>Turn down the heat.</li>
+            <li>Turn off lights and appliances </li>
+            <li>Stream movies through your smart TV, not your game console.
+         
+          <li>Buy a laptop, not a desktop computer.</li>
+          <li>Replace lights. </li>
+          <li>Don't set your fridge and freezer temperatures lower than necessary.</li>
+          <li>Choose renewables.</li>
+          <li>Replace old fridges.</li>
+          <li>Look for an Energy Star symbol when buying new products.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{!-- section-2 --}}
+  <section>
+    <div class="section-2">
+      <div class="content2">
+        <div class="info1"> 
+           <h1> On the Road, in the Sky</h1>
+          <h2>Drive Less</h2>
+          <p>Going carless for a year could save about 2.6 tons of carbon dioxide, according to 2017 study from researchers at Lund University and the University of British Columbia — that’s a little more than a roundtrip transatlantic flight. How can you stop using a car? Try taking a train, bus or better yet, ride a bike.In November 2017 carbon dioxide emissions from transportation surpassed emissions from electricity generation as the top source of greenhouse gases.  Why? Electricity generation is shifting away from the use of coal to more renewable sources and natural gas. </p>
+        </div>
+         
+        <div class="ul-1">
+           <h2>Some ways to reduce Carbon footprint: </h2>
+          <ul>
+            <li>Go easy on the gas and brakes Go easy on the gas and brakes </li>
+            <li>Regularly service your car</li>
+            <li>Check your tires.  </li>
+          
+          <li>Air conditioning and intensive city driving</li>
+          <li>Use cruise control </li>
+          <li>Don’t weigh your car down.</li>
+          <li>Carpool </li>
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{!-- Section-3 --}}
+  <section>
+    <div class="section-3">
+      <div class="content3">
+        <div class="info2">
+          <h1> On Your Plate</h1>
+          <h2>Eat Less Meat</h2>
+          <p>While food systems are complicated, and research is still evolving on what the most environmentally-friendly diet is, experts mostly agree that cutting down on meat, and red meat in particular, is a better choice for the environment. This is because the production of red meat uses a lot of feed, water and land.For that reason, eating a vegan diet is likely to be best for the environment, say experts.Eating a vegetarian or pescetarian diet are also likely to be better for the environment than a diet which includes a lot of meat.</p>
+        </div>
+        <div class="ul-2">
+          <h2>Some ways to reduce Carbon footprint: </h2>
+          <ul>
+            <li>Take stock.</li>
+            <li>TBe wary of bulk.</li>
+            <li>Plan.</li>
+            <li>Get creative.</li>
+            <li>Freeze.</li>
+            <li>Doggie bag.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="../../script.js"></script>
+</body>
+
+</html>
