@@ -24,7 +24,7 @@ Stay up-to-date with environmental conservation events happening in India throug
 
 ## Getting Started
 
-1. Clone this repository: `git clone https://github.com/yourusername/terra-tech.git`
+1. Clone this repository: `git clone https://github.com/Yrk-Yashraj/TerraTech.git`
 2. Install the required dependencies.
 3. Customize the website to fit your needs.
 4. Deploy the website to your preferred hosting platform.
